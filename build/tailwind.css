@@ -627,6 +627,12 @@ video {
 
 /*tailwind end components */
 
+.bg-white {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
 .bg-gray-100 {
   --bg-opacity: 1;
   background-color: #f7fafc;
@@ -643,6 +649,12 @@ video {
   --bg-opacity: 1;
   background-color: #718096;
   background-color: rgba(113, 128, 150, var(--bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
 }
 
 .block {
@@ -697,6 +709,28 @@ video {
   font-size: 1.875rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -718,6 +752,10 @@ video {
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pl-3 {
@@ -744,16 +782,46 @@ video {
   color: rgba(203, 213, 224, var(--text-opacity));
 }
 
+.text-gray-700 {
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+}
+
 .text-gray-800 {
   --text-opacity: 1;
   color: #2d3748;
   color: rgba(45, 55, 72, var(--text-opacity));
 }
 
+.text-gray-900 {
+  --text-opacity: 1;
+  color: #1a202c;
+  color: rgba(26, 32, 44, var(--text-opacity));
+}
+
 .text-red-400 {
   --text-opacity: 1;
   color: #fc8181;
   color: rgba(252, 129, 129, var(--text-opacity));
+}
+
+.text-yellow-600 {
+  --text-opacity: 1;
+  color: #d69e2e;
+  color: rgba(214, 158, 46, var(--text-opacity));
+}
+
+.text-green-600 {
+  --text-opacity: 1;
+  color: #38a169;
+  color: rgba(56, 161, 105, var(--text-opacity));
+}
+
+.text-blue-600 {
+  --text-opacity: 1;
+  color: #3182ce;
+  color: rgba(49, 130, 206, var(--text-opacity));
 }
 
 .hover\:text-gray-100:hover {
@@ -774,15 +842,19 @@ video {
   color: rgba(99, 179, 237, var(--text-opacity));
 }
 
-.underline {
-  text-decoration: underline;
-}
-
 .w-4 {
   width: 1rem;
 }
 
 .w-48 {
   width: 12rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-1\/5 {
+  width: 20%;
 }
 
