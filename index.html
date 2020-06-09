@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graham Parsons - Developer</title>
+    <title>Graham Parsons - Software Developer</title>
     <link rel="stylesheet" href="./build/tailwind.css">
     <script defer src="./js/main.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165889150-1"></script>
@@ -12,14 +12,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-165889150-1');
     </script>
-
 </head>
 
 <body class="bg-gray-100">
-
     <header class="bg-gray-600">
         <div class="flex items-center justify-between px-4 py-2">
             <div>
@@ -39,50 +36,64 @@
             </div>
         </div>
         <div class="hidden px-4 py-2" id='dropdown_menu'>
-            <a href="./resume.pdf" class="block text-white font-medium hover:text-gray-200" target="_blank">Resume</a>
+            <a href="./resume.pdf" class="block text-white font-medium hover:text-gray-200" target="_blank">Résumé</a>
+            <a href="https://github.com/gep-parsons" class="block text-white font-medium hover:text-gray-200 pt-1"
+                target="_blank">Check out my <span class="text-green-400">GitHub</span>!</a>
         </div>
     </header>
 
     <div class="flex justify-around items-center">
-        <h1 class="text-2xl text-center">Graham Parsons, Software Developer</h1>
-        <img class="h-56 w-48 object-contain" src="./img/grahamsolo.jpg" alt="Graham on CA coast">
+        <h1 class="text-3xl text-center">Graham Parsons, Software Developer</h1>
+        <img class="h-56 w-48 object-contain" src="./img/grahamsolo.jpg" alt="Graham Parsons headshot">
     </div>
 
     <div class='text-center'>
         <p class="text-2xl">About Graham</p>
-        <p class='w-2/3 m-auto'>
-            My name is Graham Parsons and I currently work remotely for <a class='text-red-400 hover:text-blue-400'
-                href="https://principlebusinessenterprises.com/" rel="noreferrer noopener" target="_blank">Principle
-                Business Enterprises</a> (PBE) under the title of Python Programmer
-            (although I do work in more than just Python). At PBE, my main
-            focus is
-            working on projects that help save time for other associates, and increase our automated workflows.
-        </p>
+        <div class="flex justify-center flex-col p-1 flex-wrap m-auto bg-gray-200">
+            <p class='w-2/3 m-auto p-2'>My name is Graham Parsons and I currently work for <a
+                    class='text-red-500 hover:text-blue-400' href="https://principlebusinessenterprises.com/"
+                    rel="noreferrer noopener" target="_blank">Principle
+                    Business Enterprises</a> (PBE) as a Software Engineer.</p>
+            <p class='w-2/3 m-auto p-2'> At PBE, my main focus is
+                working on projects that help save time for other associates
+                and creating automated workflows.</p>
+        </div>
         <div class="bg-white shadow-base w-2/3 text-center m-auto py-2 mt-2 hover:bg-gray-200">
             <p class='text-gray-900'>I have extensive experience in the following languages or
                 technologies:</p>
-            <p class='text-gray-700'><span class="text-green-600">Python</span> (especially,
-                Flask, Django, and Pandas)
+            <p class='text-gray-700'><span class="text-green-600">Python</span>
+                <span class="text-xs">(especially
+                    Flask, Django, and Pandas)</span>
             </p>
             <p class='text-blue-600'>R</p>
             <p class='text-yellow-600'>JavaScript</p>
-            <div class='w-1/5 bg-gray-600 m-auto'>
+            <div class='w-1/5 bg-gray-800 m-auto'>
                 <p class='text-white'>Bash</p>
             </div>
-            <p class='text-blue-600'>SQL, especially Postgres</p>
+            <p class='text-blue-600'>SQL</p>
+            <p class="text-blue-400">RDBMS
+                <span class="text-xs text-gray-700">
+                    (especially MySQL and PostgreSQL)</span>
+            </p>
         </div>
-        <p class='my-4'>I received a Bachelor of Arts in History and Bachelor of Science in
-            Applied Mathematics from <span>Old Dominion University</span> in 2016.
-        </p>
-        <p>My wife, daughter, and I live in Mankato, Minnesota.
-            <p class="my-0">Minnesota is a great place to live! Just don't come between January and March though
-                &#x1F609;</p>
-        </p>
-        <p class="mt-4 pb-2">Contact me: gep.parsons at gmail.com</p>
-
+        <div class="m-auto">
+            <p class='my-4 w-2/3 mx-auto'>I earned a Bachelor of Arts in History and Bachelor of Science in
+                Applied Mathematics from <a class='text-blue-500 hover:underline' href="https://odu.edu/"
+                    rel="noreferrer noopener" target="_blank">Old Dominion University</a> in 2016.
+            </p>
+            <div class="bg-gray-200 w-full">
+                <div class="w-2/3 mx-auto">
+                    <p>My wife, daughter, and I live in Mankato, Minnesota.
+                        <p class="my-0">Minnesota is a great place to live! But don't come between January and March
+                            &#x1F609;</p>
+                    </p>
+                </div>
+            </div>
+            <p class="mt-4 pb-8">Contact me: <a class="text-green-500 hover:underline"
+                    href="mailto:gep.parsons@gmail.com">gep.parsons@gmail.com</a>
+            </p>
+        </div>
     </div>
-
-
 </body>
 
 </html>
